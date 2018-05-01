@@ -31,10 +31,6 @@ describe "Student" do
   describe "#learn" do 
     it "takes in an argument of a string of knowledge and adds it to the student's knowledge array" do 
       student.learn("Ruby framework Rails gem bundle update")
-      expect(student.instance_variable_get(:@knowledge)).to include("Ruby framework Rails gem bundle update")
-    end
-  end
-
   describe "#knowledge" do 
     it "returns that student's knowledge array" do 
       student.learn("Javascript Ember Elixir knowledge") 
